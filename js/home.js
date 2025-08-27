@@ -26,7 +26,9 @@ document.getElementById("add-money-number").addEventListener("click",function(ev
         const addMoney=parseFloat(addMoneyInput)
         // update the main value
         const newBalance=balanceInput+addMoney
-        console.log(newBalance)
+        // update the ui
+        document.getElementById('current-balance').innerText=newBalance
+        
     }
     else{
         alert('send the currect pin number')

@@ -4,23 +4,23 @@ document.getElementById("add-money-number").addEventListener("click",function(ev
 
     // Loaded the form field use the preventDefault
     event.preventDefault()
-    console.log('this is my add money button')
+    // console.log('this is my add money button')
 
     // get the add money input value
     const addMoneyInputElement=document.getElementById('input-add-money');
     const addMoneyInput=addMoneyInputElement.value ;
     // i get the input vlaue the its the empty
     addMoneyInputElement.value=" ";
-    console.log(addMoneyInput)
+    // console.log(addMoneyInput)
 
     // get the pin number
     const inputPin=document.getElementById("input-pin").value ;
-    console.log(inputPin)
+    // console.log(inputPin)
     if(inputPin==="12345"){
-        console.log('update the input balance')
+        // console.log('update the input balance')
         //   added the balance  
         const balance=document.getElementById('current-balance').innerText
-        console.log(balance)
+        // console.log(balance)
         // convert the value string to number 
         const balanceInput=parseFloat(balance)
         const addMoney=parseFloat(addMoneyInput)
